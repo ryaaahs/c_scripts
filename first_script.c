@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
 	// DECLARATIONS
 	// STATEMENTS// for float values, we use $f
 	// To for it display only so many 
@@ -56,6 +57,16 @@ int main() {
 	// There is no limit to the total amount of variables you can use
 	printf("Height: %d, Length: %d\n", height, length);
 
+	// printf("Height: %d\n", height);
+	// tokens
+	// 1 printf (identifier)
+	// 2 (punctuation)
+	// 3 "Height: %d\n" (string literal)
+	// 4 , (punctuation)
+	// 5 height (identifier)
+	// 6 ) (punctuation)
+	// 7 ; (punctuation)
+
 	//Mixing types is possible, but is not safe 
 	
 	//  Using two kinda of statements
@@ -69,5 +80,7 @@ int main() {
 	// Single line comments
 	/* Multi line comments */
 	
+	// exit(0) and return 0 are the same thing
+	// Program will still terminate without the return statement
 	return 0;
 }

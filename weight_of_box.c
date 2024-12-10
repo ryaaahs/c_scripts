@@ -13,7 +13,8 @@
 // They want use to round up, so we add 165 to volume to allow us to round up
 // weight = (volume + 165) / 166
 
-int main(void) {
+int main(void) 
+{
     int length, height, width, volume, weight;
 
     printf("Enter the length of the box: ");
