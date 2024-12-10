@@ -29,6 +29,16 @@ int main() {
 	length = 12;
 	width = 10;
 
+	// f stands for forrmated (Use of a formatted string)
+	// scanf
+	// printf
+
+	// Scan a value into an int (Looks for a int value on input)
+	// scanf("%d", &i); 
+
+	// Scan a value into an float (Looks for a float value)
+	// scanf("%f", &x);
+
 	// Right side of the assignment is considered an expression
 	volume = height * length * width;
 
