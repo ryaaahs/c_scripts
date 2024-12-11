@@ -4,7 +4,18 @@
 
 int main(void)
 {
-    float radius = 10.0f;
+    float radius;
 
-    printf("Volume of Sphere: %.1f\n", (4.0f / 3.0f * PI * (radius * radius * radius)));
+    printf("Enter the value of radius (float): "); 
+
+    if (scanf("%f", &radius) == 1) 
+    {
+        printf("Volume of Sphere: %.1f\n", (4.0f / 3.0f * PI * (radius * radius * radius)));
+    }
+    else
+    {
+            printf("Failed to assign value to radius.");
+    }
+
+    return 0;
 }
