@@ -28,11 +28,17 @@ int main(void) {
     // p == precision depends on the conversion specifier
 
     // Common Converstion Specifiers
-    // d - displays an int in decimal form (base10) (p indicates the minimum amount of numbers to display)
+    // d - [Displays an int in decimal form (base10)] (p indicates the minimum amount of numbers to display)
     // (Adding extra zeros to the start of the number)
-    // e
-    // f
-    // g
+    // e - [Displayed fp number in exponential form] p indicates how many digits should appear after the point (p being 0 is not displayed)
+    // f - [Displayed in fixed] Same as e
+    // g - [Displays in either Fixed or Exponential format] p indicates the max number of significant digits
+
+    // g is useful if the display numbers cannot be predicted
+    // Small to large fixed decimal format
+    // Very large or very small exponential format
+
+    // 
 
     printf("i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
     printf("i = %.2d\n", i); //••••••••10 %10d - %-4d == 10••
