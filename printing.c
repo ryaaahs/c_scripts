@@ -38,7 +38,13 @@ int main(void) {
     // Small to large fixed decimal format
     // Very large or very small exponential format
 
-    // 
+    //Escape Sequences
+
+    // Alert (bell) \a
+    // Backspace \b
+    // New line \n
+    // H orizontaltab \t
+    // \" allows you to have "" in a string, same with "\\" prints "\"
 
     printf("i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
     printf("i = %.2d\n", i); //••••••••10 %10d - %-4d == 10••
