@@ -46,6 +46,8 @@ int main(void) {
     // H orizontaltab \t
     // \" allows you to have "" in a string, same with "\\" prints "\"
 
+    printf("Net profit: %d%%", 10); 
+
     printf("i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
     printf("i = %.2d\n", i); //••••••••10 %10d - %-4d == 10••
     printf("i = %-4da\n", i); // If the value is 10000, it will display the value normally
