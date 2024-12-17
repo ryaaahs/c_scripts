@@ -37,14 +37,14 @@ int main(void)
     // Both options work and are the same cause of the buffer
 
     // 3.1.4
-    int i, j;
-    float x;
+    // int i, j;
+    // float x;
 
-    printf("Enter Values: "); 
-    // 10.3 5 6
-    scanf("%d%f%d", &i, &x, &j);
+    // printf("Enter Values: "); 
+    // // 10.3 5 6
+    // scanf("%d%f%d", &i, &x, &j);
 
-    printf("Value of i: %d, Value of x: %f, Value of j: %d\n", i, x, j);
+    // printf("Value of i: %d, Value of x: %f, Value of j: %d\n", i, x, j);
     // 10, 5.0000, 6
     // Actual answer
     // Value of i: 10, Value of x: 0.300000, Value of j: 5
@@ -54,14 +54,16 @@ int main(void)
     // reads 5 and gets a space, so it stores 5 into it and ends cause of the following space.
 
      // 3.1.5
-    int i, j;
-    float x;
+    int i;
+    float x, y;
 
     printf("Enter Values: "); 
-    // 10.3 5 6
-    scanf("%d%f%d", &i, &x, &j);
+    // 12.3 45.6 789
+    scanf("%f%d%f", &x, &i, &y);
 
-    printf("Value of i: %d, Value of x: %f, Value of j: %d\n", i, x, j);
+    printf("Value of x: %f, Value of i: %d, Value of y: %f\n", x, i, y);
+    // 12.3 45 0.6
+    // Value of x: 12.300000, Value of i: 45, Value of y: 0.600000
 
     return 0;
 }
