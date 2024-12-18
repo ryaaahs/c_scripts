@@ -26,5 +26,40 @@ int main(void)
     // 44 % 10 == 4
     // 9 - 4 == 5 (check digit)
 
+    // 0 51500 24128
+    // 0 1 0 2 1 8 == 12
+    // 5 5 0 4 2 == 16
+    // 12 * 3 == 36
+    // 36 + 16 == 52
+    // 52 - 1 == 51
+    // 51 % 10 == 1
+    // 9 - 1 == 8
+
+    // 0 31200 01005
+    // 0 1 0 0 0 5 == 6
+    // 3 2 0 1 0 == 6
+    // 6 * 3 == 18
+    // 18 + 6 == 24
+    // 24 - 1 == 23
+    // 23 % 10 == 3
+    // 9 - 3 == 6
+
+    int item, m1, m2, m3, m4, m5, p1, p2, p3, p4, p5, first_sum, second_sum, check_digit;
+
+    printf("Enter the first (single digit): ");
+    scanf("%d", &item);
+    printf("Enter the first group of five digits: ");
+    scanf("%1d%1d%1d%1d%1d", &m1, &m2, &m3, &m4, &m5);
+    printf("Enter the second group of five digits: ");
+    scanf("%1d%1d%1d%1d%1d", &p1, &p2, &p3, &p4, &p5);
+
+    // Calculate the check digit
+    first_sum = item + m2 + m4 + p1 + p3 + p5;
+    second_sum = m1 + m3 + m5 + p2 + p4;
+    check_digit = 3 * first_sum + second_sum;
+    check_digit = 9 - ((check_digit - 1) % 10);
+
+    printf("Check digit: %d\n", check_digit);
+
     return 0;
 }
