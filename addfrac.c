@@ -16,4 +16,6 @@ int main(void)
     printf("The sum is %d/%d\n", result_num, result_denom);
 
     return 0;
+
+    
 }
