@@ -39,7 +39,7 @@ int main(void) {
     // 1 || 3 == 1
 
     // Short-circuit behaviour of logical expressions
-    i = 3, j = 4, k = 5;
+i = 3, j = 4, k = 5;
     printf("%d\n", i < j || ++j < k);
     // First part is one so it skips the remaining logic
     // 3 < 4 == 1
